@@ -18,7 +18,7 @@ async function run() {
     core.info(`update stack & pull image ...`);
     let update = await axios({
       method: 'put',
-      url: `${host}/api/stacks/${stack}?endpointId=${endpoint}`,
+      url: `${url}/api/stacks/${stack}?endpointId=${endpoint}`,
       headers: { 'X-API-Key': api_key, 'Content-Type': 'application/json'},
       data : JSON.stringify({
         "StackFileContent": stack_file.data.StackFileContent,
