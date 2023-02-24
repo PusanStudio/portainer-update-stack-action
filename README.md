@@ -4,7 +4,7 @@
 ## Example usage
 
 ```yaml
-uses: PusanStudio/portainer-update-stack-action
+uses: PusanStudio/portainer-update-stack-action@main
 with:
   portainer-url: ${{ secrets.PORTAINER_URL }}
   portainer-api-key: ${{ secrets.PORTAINER_API_KEY }}
