@@ -10,4 +10,5 @@ with:
   portainer-api-key: ${{ secrets.PORTAINER_API_KEY }}
   portainer-endpoint: 1
   portainer-stack: 1
+  portainer-stack-file: docker-compose.yml
 ```
