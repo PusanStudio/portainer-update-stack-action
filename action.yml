@@ -17,6 +17,10 @@ inputs:
     description: 'Portainer Stack Id'
     required: true
     default: 1
+  portainer-stack-file:
+    description: 'Portainer Stack File'
+    required: true
+    default: ""
 outputs:
   status:
     description: 'Portainer Update Stack Status'
