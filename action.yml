@@ -1,0 +1,25 @@
+name: 'portainer-update-stack-action'
+description: 'Update Portainer Stack with Portainer-CE API'
+inputs:
+  portainer-url:
+    description: 'Portainer url'
+    required: true
+    default: ''
+  portainer-api-key:
+    description: 'Portainer Api Key'
+    required: true
+    default: ''
+  portainer-endpoint:
+    description: 'Portainer Cluster Id'
+    required: true
+    default: 1
+  portainer-stack:
+    description: 'Portainer Stack Id'
+    required: true
+    default: 1
+outputs:
+  status:
+    description: 'Portainer Update Stack Status'
+runs:
+  using: 'node16'
+  main: 'index.js'
